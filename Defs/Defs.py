@@ -6,23 +6,23 @@ def hitungbiaya(jenis, jammasuk, jamkeluar):
     
     if durasi <= 1:
         if jenis == "Motor":
-            harga = 3000
+            harga = durasi * 3000
         elif jenis == "Mobil":
-            harga = 4000
+            harga = durasi * 4000
         else:
             harga = "Unknown"
     elif durasi <= 2:
         if jenis == "Motor":
-            harga = 4000
+            harga = durasi * 4000
         elif jenis == "Mobil":
-            harga = 5000
+            harga = durasi * 5000
         else:
             harga = "Unknown"
     else:
         if jenis == "Motor":
-            harga = 5000
+            harga = durasi * 5000
         elif jenis == "Mobil":
-            harga = 6000
+            harga = durasi * 6000
         else:
             harga = "Unknown"
     st.write(f"Total Biaya: {harga} Rp.")
