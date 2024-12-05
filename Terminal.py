@@ -18,18 +18,19 @@ if halaman == "Karcis":
         placeholder="Pilih Jenis Kendaraan"
     )
 
-    if jenis == "Motor":
-        st.write("Harga Perkiran Motor")
-        st.write('1. Satu Jam Pertama : Rp.3.000')
-        st.write('2. Dua Jam : Rp.4.000')
-        st.write('3. Lebih Dari tiga Jam : Rp.5.000\n')
-    elif jenis == "Mobil":
-        st.write("Harga Perkiran Mobil")
-        st.write('1. Satu Jam Pertama : Rp.4.000')
-        st.write('2. Dua Jam : Rp.5.000')
-        st.write('3. Lebih Dari tiga Jam : Rp.6.000\n')
-    else:
-        st.write("")
+    if st.toggle("Biaya Parkir"):
+        if jenis == "Motor":
+            st.write("Harga Perkiran Motor")
+            st.write('1. Satu Jam Pertama : Rp.3.000')
+            st.write('2. Dua Jam : Rp.4.000')
+            st.write('3. Lebih Dari tiga Jam : Rp.5.000\n')
+        elif jenis == "Mobil":
+            st.write("Harga Perkiran Mobil")
+            st.write('1. Satu Jam Pertama : Rp.4.000')
+            st.write('2. Dua Jam : Rp.5.000')
+            st.write('3. Lebih Dari tiga Jam : Rp.6.000\n')
+        else:
+            st.write("")
 
     platno = st.text_input("Masukkan Plat Nomor Kendaraan: ")
     jammasuk = st.number_input("Jam Masuk: ")
