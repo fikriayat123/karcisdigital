@@ -25,7 +25,7 @@ def hitungbiaya(jenis, jammasuk, jamkeluar):
             harga = durasi * 6000
         else:
             harga = "Unknown"
-    st.write(f"Total Biaya: {harga} Rp.")
+    st.write(f"Total Biaya: Rp {harga}.")
     return harga
 
 def karcis(karcisid, jenis, platno, jammasuk, jamkeluar):
