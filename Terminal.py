@@ -22,13 +22,13 @@ if halaman == "Karcis":
         if jenis == "Motor":
             st.write("Harga Perkiran Motor")
             st.write('1. Satu Jam Pertama : Rp.3.000')
-            st.write('2. Dua Jam : Rp.4.000')
-            st.write('3. Lebih Dari tiga Jam : Rp.5.000\n')
+            st.write('2. Dua Jam : Rp.4.000 per Jam')
+            st.write('3. Lebih Dari tiga Jam : Rp.5.000 per Jam\n')
         elif jenis == "Mobil":
             st.write("Harga Perkiran Mobil")
             st.write('1. Satu Jam Pertama : Rp.4.000')
-            st.write('2. Dua Jam : Rp.5.000')
-            st.write('3. Lebih Dari tiga Jam : Rp.6.000\n')
+            st.write('2. Dua Jam : Rp.5.000 per Jam')
+            st.write('3. Lebih Dari tiga Jam : Rp.6.000 per Jam\n')
         else:
             st.write("Tolong pilih jenis kendaraannya terlebih dahulu")
 
