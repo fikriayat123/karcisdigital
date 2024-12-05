@@ -30,7 +30,7 @@ if halaman == "Karcis":
             st.write('2. Dua Jam : Rp.5.000')
             st.write('3. Lebih Dari tiga Jam : Rp.6.000\n')
         else:
-            st.write("")
+            st.write("Tolong pilih jenis kendaraannya terlebih dahulu")
 
     platno = st.text_input("Masukkan Plat Nomor Kendaraan: ")
     jammasuk = st.number_input("Jam Masuk: ")
